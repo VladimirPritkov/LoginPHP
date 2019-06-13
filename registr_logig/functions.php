@@ -1,4 +1,6 @@
 <?php
+
+
 function validLog()
 {
     if (!isset($_POST['login']) || empty($_POST['login']))
@@ -7,6 +9,7 @@ function validLog()
     }
     return true;
 }
+
 function validPass()
 {
     if (!isset($_POST['pass']) || empty($_POST['pass']))
@@ -15,11 +18,15 @@ function validPass()
     }
     return true;
 }
-function startChecking($login,$pass, $key){
+
+function startChecking($login, $pass)
+{
  if($key = array_search($_POST['login'], $login)){;
  if($_POST['pass'] !== $pass[$key] ){
+     echo 'false';
      return false;
  }
  return true;
+ 
 }
 }

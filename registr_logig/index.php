@@ -1,3 +1,4 @@
+
 <?php include 'UserValidator.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -5,16 +6,13 @@
     <meta charset="UTF-8">
     <title>Document</title>
 </head>
+
 <body>
-    <div class="logIn">
-    <form action="index.php" method="post">
-    <input type="text" name="login" value="">
-    <input type="password" name="pass" value=""> 
-    <input type="submit" value="START">
-    </form>
-    <?php echo $userStatus;?>
-    <?php echo $user;?>
-    
-    </div>
+    <div><?php echo $pages ;?></div>
+    <div><?php echo $userStatus;?></div>
 </body>
+
 </html>
+
+
+
